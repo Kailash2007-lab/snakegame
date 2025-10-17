@@ -29,6 +29,22 @@ function resetGame() {
 
 restartButton.addEventListener('click', resetGame);
 
+restartButton.addEventListener('mouseover', () => {
+    restartButton.style.transform = 'scale(1.1)';
+});
+
+restartButton.addEventListener('mouseout', () => {
+    restartButton.style.transform = 'scale(1)';
+});
+
+restartButton.addEventListener('mousedown', () => {
+    restartButton.style.transform = 'scale(0.9)';
+});
+
+restartButton.addEventListener('mouseup', () => {
+    restartButton.style.transform = 'scale(1.1)';
+});
+
 document.addEventListener('keydown', direction);
 
 function direction(event) {
