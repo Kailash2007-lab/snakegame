@@ -13,6 +13,11 @@ This is a simple Snake and Egg game implemented using HTML, CSS, and JavaScript.
 - The game ends if the snake runs into the walls or itself.
 - Click the "Restart" button to start a new game.
 
+## Features
+
+- The "Restart" button is styled with CSS to have a red background and changes color on hover.
+- The button has a scaling effect when hovered over or clicked, providing a more interactive experience.
+
 ## Files
 
 - `index.html`: The HTML file that contains the structure of the game.
