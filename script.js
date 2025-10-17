@@ -1,5 +1,6 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
+const restartButton = document.getElementById('restartButton');
 
 const box = 20;
 let snake = [];
@@ -12,6 +13,21 @@ let egg = {
 
 let score = 0;
 let d;
+
+function resetGame() {
+    snake = [];
+    snake[0] = { x: 9 * box, y: 10 * box };
+    egg = {
+        x: Math.floor(Math.random() * 19 + 1) * box,
+        y: Math.floor(Math.random() * 19 + 1) * box
+    };
+    score = 0;
+    d = undefined;
+    clearInterval(game);
+    game = setInterval(draw, 100);
+}
+
+restartButton.addEventListener('click', resetGame);
 
 document.addEventListener('keydown', direction);
 
