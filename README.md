@@ -11,11 +11,12 @@ This is a simple Snake and Egg game implemented using HTML, CSS, and JavaScript.
   - **Down Arrow**: Move down
 - The snake will grow longer each time it eats the egg.
 - The game ends if the snake runs into the walls or itself.
+- Click the "Restart" button to start a new game.
 
 ## Files
 
 - `index.html`: The HTML file that contains the structure of the game.
-- `styles.css`: The CSS file that styles the game canvas.
+- `styles.css`: The CSS file that styles the game canvas and button.
 - `script.js`: The JavaScript file that contains the game logic.
 
 ## Setup
